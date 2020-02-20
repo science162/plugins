@@ -99,7 +99,7 @@ plug = p.listPlugins()
 # In[4]:
 
 
-plug
+print(plug)
 
 
 # In[ ]:
