@@ -4,11 +4,11 @@
 # In[1]:
 
 
-""""
-!pip install zipfile36
-!pip install requests
-!pip install wget
-"""
+
+get_ipython().system('pip install zipfile36')
+get_ipython().system('pip install requests')
+get_ipython().system('pip install wget')
+
 import requests
 import pandas as pd
 import xml.etree.ElementTree as ET
