@@ -4,11 +4,11 @@
 # In[1]:
 
 
-
+"""
 get_ipython().system('pip install zipfile36')
 get_ipython().system('pip install requests')
 get_ipython().system('pip install wget')
-
+"""
 import requests
 import pandas as pd
 import xml.etree.ElementTree as ET
