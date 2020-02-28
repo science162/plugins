@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 """
 get_ipython().system('pip install zipfile36')
@@ -10,7 +8,6 @@ get_ipython().system('pip install requests')
 get_ipython().system('pip install wget')
 """
 import requests
-import pandas as pd
 import xml.etree.ElementTree as ET
 import zipfile as zp
 import os
@@ -72,7 +69,6 @@ class PluginReader:
                 if schild.tag == 'unit':
                     for xchild in schild:
                         if xchild.tag == 'provides':
-                            dico = {}
                             versionList = []
                             for provided in xchild:
                                 versionList.append(provided.attrib['version'])
@@ -89,20 +85,15 @@ url3 = 'http://download.eclipse.org/releases/2019-12/201910181000/content.jar'
 url4 = 'http://download.tuxfamily.org/arakhne/p2/content.jar'
 
 
-# In[2]:
 
 
 p = PluginReader(url3)
 plug = p.listPlugins()
 
 
-# In[4]:
-
-
 print(plug)
 
 
-# In[ ]:
 
 
 
